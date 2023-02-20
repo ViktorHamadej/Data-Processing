@@ -1,0 +1,30 @@
+div.main{
+  border: 3px solid black;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  overflow: hidden;
+}
+
+div.main-body{
+  padding: 10px;
+  padding-left: 3%;
+  font-weight: bold;
+}
+
+div.main-body div:first-child{
+  margin-bottom: 10px;
+}
+
+div.main-name{
+  text-align: center;
+  padding: 10px;
+  background-color: lightgray;
+  border-bottom: 3px solid black;
+  font-weight: bolder;
+}
+
+div.App{
+  margin-top: 40px;
+}
