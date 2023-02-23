@@ -10,43 +10,6 @@ for(var x = 1; x < 6; x++){
 
 const requests = urls.map((url) => axios.get(url));
 
-/*async function GET_request(){
-  var resp_data = [
-    ["nazov", "hodnota", "jednotka", "timestamp"],
-    ["nazov", "hodnota", "jednotka", "timestamp"],
-    ["nazov", "hodnota", "jednotka", "timestamp"],
-    ["nazov", "hodnota", "jednotka", "timestamp"],
-    ["nazov", "hodnota", "jednotka", "timestamp"]
-  ];
-
-
-  for(var i = 1; i < 6; i++){
-    try {
-      const resp = await axios.get('https://dev.energo.itsmart.sk:8081/api/data/actual/' + i)
-      .then((response) => {
-        var pass = true;
-        for(var v = 0; v < 5; v++){
-          if(pass === true){
-            if(resp_data[v][0] === "nazov"){
-              resp_data[v][0] = response.data.nazov;
-              resp_data[v][1] = response.data.hodnota;
-              resp_data[v][2] = response.data.jednotka;
-              resp_data[v][3] = response.data.timestamp;
-
-              pass = false;
-            }
-          }
-        }
-      });
-    }
-    catch(err){
-      console.error(err);
-    }
-  }
-
-  return resp_data;
-}*/
-
 
 function App() {
   const [data, setData] = useState([]);
